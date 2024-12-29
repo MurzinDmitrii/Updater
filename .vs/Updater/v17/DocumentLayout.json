@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|c:\\users\\dmitrii\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\updater\\updater\\checker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|solutionrelative:updater\\checker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|c:\\users\\dmitrii\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\updater\\updater\\configmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|solutionrelative:updater\\configmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|c:\\users\\dmitrii\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\updater\\updater\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|solutionrelative:updater\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|c:\\users\\dmitrii\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\updater\\updater\\staticmutex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|solutionrelative:updater\\staticmutex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|c:\\users\\dmitrii\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\updater\\updater\\autorun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|solutionrelative:updater\\autorun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|c:\\users\\dmitrii\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\updater\\updater\\downloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5656784-3186-4E78-B3D9-77F86AE84D91}|Updater\\Updater.csproj|solutionrelative:updater\\downloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 178,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\Program.cs",
+              "RelativeDocumentMoniker": "Updater\\Program.cs",
+              "ToolTip": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\Program.cs",
+              "RelativeToolTip": "Updater\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwBwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T20:48:10.176Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigManager.cs",
+              "DocumentMoniker": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\ConfigManager.cs",
+              "RelativeDocumentMoniker": "Updater\\ConfigManager.cs",
+              "ToolTip": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\ConfigManager.cs",
+              "RelativeToolTip": "Updater\\ConfigManager.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T18:04:05.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Autorun.cs",
+              "DocumentMoniker": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\Autorun.cs",
+              "RelativeDocumentMoniker": "Updater\\Autorun.cs",
+              "ToolTip": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\Autorun.cs",
+              "RelativeToolTip": "Updater\\Autorun.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAawA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T17:52:14.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StaticMutex.cs",
+              "DocumentMoniker": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\StaticMutex.cs",
+              "RelativeDocumentMoniker": "Updater\\StaticMutex.cs",
+              "ToolTip": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\StaticMutex.cs",
+              "RelativeToolTip": "Updater\\StaticMutex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T11:36:41.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Checker.cs",
+              "DocumentMoniker": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\Checker.cs",
+              "RelativeDocumentMoniker": "Updater\\Checker.cs",
+              "ToolTip": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\Checker.cs",
+              "RelativeToolTip": "Updater\\Checker.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAawBwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T17:37:01.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Downloader.cs",
+              "DocumentMoniker": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\Downloader.cs",
+              "RelativeDocumentMoniker": "Updater\\Downloader.cs",
+              "ToolTip": "C:\\Users\\Dmitrii\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Updater\\Updater\\Downloader.cs",
+              "RelativeToolTip": "Updater\\Downloader.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T16:52:10.633Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
