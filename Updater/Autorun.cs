@@ -12,7 +12,7 @@ namespace Updater
     {
         public static bool Run(Config config)
         {
-            string name = config.AppName + "Updater";
+            string name = config.AppName;
             string exePath = Assembly.GetExecutingAssembly().Location;
             exePath = exePath.Replace(".dll", ".exe");
             RegistryKey reg;

@@ -29,7 +29,7 @@ namespace Updater
             }
 
             Process startProcess = new Process();
-            startProcess.StartInfo.FileName = config.AppName + ".exe";
+            startProcess.StartInfo.FileName = config.AppName + "/" + config.AppName + ".exe";
             startProcess.Start();
             Environment.Exit(0);
         }

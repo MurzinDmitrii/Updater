@@ -14,6 +14,8 @@ namespace Updater
         internal static async Task DownloadAllFilesFromRepo(Config config)
         {
             string apiUrl = $"https://api.github.com/repos/{config.RepoOwner}/{config.RepoName}/contents/";
+            EnsureDirectoryExists(config.AppName);
+
             using (HttpClient client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", config.Token);
@@ -27,7 +29,7 @@ namespace Updater
                 foreach (var file in files)
                 {
                     string downloadUrl = file["download_url"].ToString();
-                    string fileName = file["name"].ToString();
+                    string fileName = config.AppName + "/" + file["name"].ToString();
                     await DownloadFile(client, downloadUrl, fileName);
                 }
             }
@@ -39,6 +41,14 @@ namespace Updater
             response.EnsureSuccessStatusCode();
             byte[] fileBytes = await response.Content.ReadAsByteArrayAsync();
             await File.WriteAllBytesAsync(filePath, fileBytes);
+        }
+
+        private static void EnsureDirectoryExists(string directoryPath)
+        {
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
         }
     }
 }

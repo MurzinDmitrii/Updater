@@ -12,7 +12,7 @@ namespace Updater
     internal static class ConfigManager
     {
         private readonly static string appDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-        private readonly static string configPath = Path.Combine(appDirectory, "Config.json");
+        private readonly static string configPath = Path.Combine(appDirectory, "UpdaterConfig.json");
 
         internal static Config Loading()
         {
