@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Cifra.Classes.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,7 +14,7 @@ namespace Updater
         internal static async Task<bool> Check(Config config)
         {
             string url = $"https://raw.githubusercontent.com/{config.RepoOwner}/{config.RepoName}/master/Version.txt";
-            string filePath = "Version.txt";
+            string filePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\" + config.AppName + "\\Version.txt";
             string token = config.Token;
 
             using (HttpClient client = new HttpClient())
@@ -37,6 +39,7 @@ namespace Updater
                 }
                 catch (Exception ex)
                 {
+                    Log.Write("Ошибка в классе Checker: " + ex.Message);
                     return false;
                 }
             }

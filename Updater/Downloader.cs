@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Newtonsoft.Json.Linq;
+using Cifra.Classes.Logging;
+using System.Reflection;
 
 namespace Updater
 {
@@ -13,25 +15,33 @@ namespace Updater
     {
         internal static async Task DownloadAllFilesFromRepo(Config config)
         {
-            string apiUrl = $"https://api.github.com/repos/{config.RepoOwner}/{config.RepoName}/contents/";
-            EnsureDirectoryExists(config.AppName);
-
-            using (HttpClient client = new HttpClient())
+            try
             {
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", config.Token);
-                client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("HttpClient", "1.0"));
+                string apiUrl = $"https://api.github.com/repos/{config.RepoOwner}/{config.RepoName}/contents/";
+                string appDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\" + config.AppName;
+                EnsureDirectoryExists(appDirectory);
 
-                HttpResponseMessage response = await client.GetAsync(apiUrl);
-                response.EnsureSuccessStatusCode();
-                string content = await response.Content.ReadAsStringAsync();
-                JArray files = JArray.Parse(content);
-
-                foreach (var file in files)
+                using (HttpClient client = new HttpClient())
                 {
-                    string downloadUrl = file["download_url"].ToString();
-                    string fileName = config.AppName + "/" + file["name"].ToString();
-                    await DownloadFile(client, downloadUrl, fileName);
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", config.Token);
+                    client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("HttpClient", "1.0"));
+
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+                    response.EnsureSuccessStatusCode();
+                    string content = await response.Content.ReadAsStringAsync();
+                    JArray files = JArray.Parse(content);
+
+                    foreach (var file in files)
+                    {
+                        string downloadUrl = file["download_url"].ToString();
+                        string fileName = appDirectory + "\\" + file["name"].ToString();
+                        await DownloadFile(client, downloadUrl, fileName);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                Log.Write("Ошибка в классе Downloader: " + ex.Message);
             }
         }
 
